@@ -1,7 +1,7 @@
 # UFO-Sightings
 
-
 ## Background
+We need you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
 
 Create a web page with JavaScript, HTML5, CSS3 and D3.js to create tables dynamically utilizing Document Object Model (DOM) programming interface based on a given dataset. Users will also need to filter the table data for specific values based on search criteria
 
