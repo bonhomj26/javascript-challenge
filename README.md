@@ -1,6 +1,5 @@
 # UFO-Sightings
 
-https://bigbluey.github.io/UFO-Sightings/
 
 ## Background
 
