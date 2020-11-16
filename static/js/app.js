@@ -27,13 +27,33 @@ function handleClick(){
     d3.event.preventDefault();
     // Select HTML Input Element & Get the Value Property of that Input Element
     let date = d3.select("#datetime").property("value");
+    let selectedCity = d3.select("#city").property("value");
+    let selectedState = d3.select("#state").property("value");
+    let selectedCountry = d3.select("#country").property("value");
+    let selectedShape = d3.select("#shape").property("value");
     let filterData = tableData;
 
     // Check if a Date was Entered & Filter Data Using that Date;
     if(date) {
         // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
         filterData = filterData.filter((row) => row.datetime === date);
-    }
+    };
+    if(selectedCity) {
+        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        filterData = filterData.filter((row) => row.city === selectedCity);
+    };
+    if(selectedState) {
+        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        filterData = filterData.filter((row) => row.state === selectedState);
+    };
+    if(selectedCountry) {
+        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        filterData = filterData.filter((row) => row.country === selectedCountry);
+    };
+    if(selectedShape) {
+        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        filterData = filterData.filter((row) => row.shape === selectedShape);
+    };
     // Build Table with Filtered Data
     buildTable(filterData);
 }
