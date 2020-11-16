@@ -39,19 +39,19 @@ function handleClick(){
         filterData = filterData.filter((row) => row.datetime === date);
     };
     if(selectedCity) {
-        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        // Apply Filter to the Table Data to Only Keep Rows Where city Value Matches the Filter Value
         filterData = filterData.filter((row) => row.city === selectedCity);
     };
     if(selectedState) {
-        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        // Apply Filter to the Table Data to Only Keep Rows Where state Value Matches the Filter Value
         filterData = filterData.filter((row) => row.state === selectedState);
     };
     if(selectedCountry) {
-        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        // Apply Filter to the Table Data to Only Keep Rows Where country Value Matches the Filter Value
         filterData = filterData.filter((row) => row.country === selectedCountry);
     };
     if(selectedShape) {
-        // Apply Filter to the Table Data to Only Keep Rows Where datetime Value Matches the Filter Value
+        // Apply Filter to the Table Data to Only Keep Rows Where shape Value Matches the Filter Value
         filterData = filterData.filter((row) => row.shape === selectedShape);
     };
     // Build Table with Filtered Data
